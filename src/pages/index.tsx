@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Dashboard from "./Dashboard";
+import Dashboard from "@/pages/dashboard/Dashboard";
+import Login from "@/components/Login";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <Dashboard/>
+        <Login/>
       </main>
     </>
   );
